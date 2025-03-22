@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "school-management-client",
   "version": "0.1.0",
   "private": true,
@@ -48,4 +49,23 @@
     ]
   },
   "proxy": "http://localhost:5000"
+=======
+  "name": "school-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive school management system with digital payments",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["school", "management", "payments", "mern"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+>>>>>>> a1e45772b03cf5897c4398df44127fd8862f4cc5
 }
